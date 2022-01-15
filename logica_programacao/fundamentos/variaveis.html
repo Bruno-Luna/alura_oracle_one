@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h2>Variáveis</h2>
+
+    <script>
+
+        var ano = 2021;
+        var idadeJoana = 50;
+        var idadeJoao = 20;
+        var idadeJoaquim = 70;
+
+        document.write("<li>Joana nasceu em " + (ano - idadeJoana) + ". E tem: " + idadeJoana + " anos;</li>");
+
+        document.write("<br>")
+        document.write("<li>João nasceu em " + (ano - idadeJoao) + ". E tem: " + idadeJoao + " anos; </li>");
+
+        ano = 2022;
+        document.write("<br>")
+        document.write("<li>Joaquim nasceu em " + (ano - idadeJoaquim) + ". E tem: " + idadeJoaquim + " anos; </li>");
+
+        var media = (idadeJoana + idadeJoao + idadeJoaquim) / 3;
+        document.write("<br>")
+        document.write("A média das idades é: " + Math.round(media) + " anos.");
+
+    </script>
+</body>
+</html>
