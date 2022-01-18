@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h2>Diferença de idade</h2>
+
+    <script>
+        function pularLinha(){
+            document.write("<br>")
+        }
+
+        function imprimir(texto){
+            document.write(texto);
+            pularLinha();
+        }
+
+        var lucas = 38;
+        var joao = 20;
+        
+        imprimir("Lucas tem 38 anos");
+        imprimir("João tem 20 anos")    
+        var diferenca = (lucas - joao) / 2
+        imprimir("A diferença entre eles é de: " +  diferenca + " anos.")
+
+    </script>
+</body>
+</html>
