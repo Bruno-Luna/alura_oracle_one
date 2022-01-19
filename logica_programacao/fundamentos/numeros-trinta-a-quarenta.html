@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h2>Todos os números entre 30 a 40, exceto 33 e 37!</h2>
+
+    <script>
+        function pularLinha(){
+            document.write("<br>")
+        }
+
+        function imprimir(texto){
+            document.write(texto);
+            pularLinha();
+        }
+
+        var cont = 30;
+
+        while(cont <= 40){
+        if( cont == 33 ) {
+        cont = cont + 1;
+        }
+        if(cont == 37) {    
+            cont = cont + 1;
+        }
+        else {
+        document.write(cont + ", ");
+        cont = cont + 1; 
+        }
+    }
+        imprimir("FIM.");
+      
+    </script>
+</body>
+</html>
