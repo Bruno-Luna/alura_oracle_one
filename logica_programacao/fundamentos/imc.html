@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h2>I.M.C</h2>
+
+    <script>
+        function pularLinha(){
+            document.write("<br>");
+        }
+
+        function imprimir(texto){
+            document.write(texto);
+            pularLinha();
+        }
+
+        function calcularImc(peso, altura){
+            var imc = peso / (altura * altura);
+            return imc;
+        }
+
+        var imcBruno = calcularImc(78, 1.78);
+        var imcAmanda = calcularImc(89, 1.70);
+        
+        imprimir("O I.M.C é: " + imcBruno.toFixed(2));
+        imprimir("O I.M.C é: " + imcAmanda.toFixed(2));
+    </script>
+</body>
+</html>
