@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h2>Jogo adivinhar</h2>
+
+    <script>
+        function pularLinha(){
+            document.write("<br>");
+        }
+
+        function imprimir(texto){
+            document.write(texto);
+            pularLinha();
+        }
+
+        alert("Jogo adivinhar - Números entre 1 a 10.")
+        var numPensado = parseInt((Math.random() * 10) + 1);
+        var numChute = parseInt(prompt("Qual o número do seu palpite?"))
+
+        if(numPensado == numChute){
+            imprimir("Você acertou. Parabéns!!" + numPensado)
+        } else {
+            imprimir("Você errou. Tente novamente!" + numPensado)
+        }
+      
+    </script>
+</body>
+</html>
