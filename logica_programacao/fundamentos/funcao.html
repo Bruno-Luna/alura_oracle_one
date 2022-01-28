@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h2>Funções</h2>
+
+    <script>
+
+        function pularLinha(){
+            document.write("<br>")
+        }
+
+        function hr(){
+            document.write("<hr>")
+        }
+
+        function mostrar(lorem){
+            document.write(lorem);
+            pularLinha();
+            hr();
+        }
+
+        // sem parametro
+        document.write("Lorem ipsum dolor sit amet, consectetur adipisicing elit.")
+        pularLinha();
+        hr();
+
+        document.write("Maxime eveniet possimus repudiandae quisquam.")
+        pularLinha();
+        hr();
+
+        
+        //com parametro
+        mostrar("Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, cumque, cum quia nostrum earum molestiae sint eum sit officia doloribus");
+
+        mostrar(" quos saepe id eius quibusdam quod suscipit quo! Voluptatem, officiis?");
+
+    </script>
+    
+</body>
+</html>
