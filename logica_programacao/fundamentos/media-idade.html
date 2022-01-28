@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h2>Média de idades:</h2>
+
+    <script>
+        function pularLinha(){
+            document.write("<br>");
+        }
+
+        function imprimir(texto){
+            document.write(texto);
+            pularLinha();
+        }
+
+        var qtdSolicitada = parseInt(prompt("Quantas idades serão inseridas?"))
+        var mediaIdade = 0;
+        var cont = 0;
+
+        while(cont < qtdSolicitada){
+            var idade = parseInt(prompt("Digite a idade:"));
+            mediaIdade += idade;
+            cont++;
+
+            if(cont == qtdSolicitada){
+                imprimir("A média das idades é: " + mediaIdade / qtdSolicitada);
+            }
+        }
+
+
+    </script>
+</body>
+</html>
