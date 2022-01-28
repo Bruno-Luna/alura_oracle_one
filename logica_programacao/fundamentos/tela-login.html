@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h2>Tela de login</h2>
+
+    <script>
+    
+        var loginUser = "alura";
+        var senhaCadastrada = "alura321";
+        var contadorTentativas = 0;
+        var contadorInformativo = 3;
+
+        while(contadorTentativas < 3){
+            var loginInformado = prompt("Informe seu login");
+            var senhaInformada = prompt("Informe sua senha");
+
+            if( loginUser == loginInformado && senhaCadastrada == senhaInformada ) {
+                contadorTentativas = 3;
+                document.write("Seja Bem-vindo!!")
+            } 
+            
+            if ( loginUser != loginInformado && senhaCadastrada != senhaInformada ){
+                alert("Login inválido. Você tem mais " + (contadorInformativo = contadorInformativo - 1));
+                contadorTentativas = contadorTentativas + 1;
+                if(contadorTentativas == 3 && contadorInformativo == 0){
+                    document.write("Não foi possivel logar em sua conta. Tentativas excedidas!")
+
+                }
+            }
+        }
+
+    </script>
+</body>
+</html>
